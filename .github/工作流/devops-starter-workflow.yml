@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - master
-
 env:
   AZURE_WEBAPP_NAME: "sonar1206"    # set this to your application's name
   AZURE_WEBAPP_PACKAGE_PATH: "Application"      # set this to the path to your web app project, defaults to the repository root
