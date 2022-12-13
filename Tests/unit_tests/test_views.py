@@ -38,8 +38,4 @@ class ViewTest(TestCase):
         response = self.client.post('/', {'height':1.7,'weight':"60"})
         self.assertContains(response, '20.76', 1, 200, html=True)
         
-    def test_unit_weight(self):
-        """Tests the home page."""
-        response = self.client.post('/', {'height':1.7,'weight':"300"})
-        self.assertContains(response, '請輸入合理範圍的體重!', 1, 200, html=True)
     
