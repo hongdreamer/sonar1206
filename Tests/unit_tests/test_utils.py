@@ -37,3 +37,10 @@ class BmiCalculatorTest(TestCase):
         bmi, bmi_means = bmi_calculator(height, weight)
         self.assertEqual(bmi, 21.48)
         self.assertEqual(bmi_means, '健康體位')
+    def test_bmi_result_underweight(self):
+        """Tests bmi result."""
+        height = 1.6
+        weight = 30
+        bmi, bmi_means = bmi_calculator(height, weight)
+        self.assertEqual(bmi, 11.72)
+        self.assertEqual(bmi_means, '過輕')
