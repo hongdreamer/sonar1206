@@ -24,6 +24,7 @@ jobs:
       with:
         python-version: '3.8'
 
+
     - name: Install Dependancies
       continue-on-error: false
       run: |
